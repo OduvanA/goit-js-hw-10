@@ -70,7 +70,6 @@ startBtn.addEventListener("click", () => {
     updateDateTimeFields(timeLeft);
     if (userSelectedDate - Date.now() < 500) {
       clearInterval(timer);
-      startBtn.disabled = false;
       inputField.disabled = false;
     }
   }, 1000);
